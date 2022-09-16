@@ -1,0 +1,103 @@
+<!-- 미디어 쿼리 O-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/mq-style.css">
+        <link rel="stylesheet" href="css/drawer.css">
+        <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="common top-bar-m">
+            <nav>
+                <a href="#" onclick="openNav()">&#9776;</a>
+                <h3>(주)구멍가게</h3>
+            </nav>
+            </header>
+            <!-- 로고, 메뉴 -->
+            <header class="common top-bar">
+            <!-- <img src="image/logo.png" height="60px" width="100px"> -->
+            <h3>(주)구멍가게</h3>
+            <nav>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT</a>
+                <a href="#" onclick="location.href='join.html'">JOIN</a>
+            </nav>
+            </header>
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT</a>
+                <a href="#" onclick="location.href='join.html'">JOIN</a>
+            </div>
+            <!-- 메인 홈-->
+            <section class="common img-slide">
+                <p class="ment"></p>
+            </section>
+            <!-- 본문 -->
+            <section class="common our-job">
+                <div class="decript">
+                    <p class="instagram">
+                    <span>구멍가게와 함께하세요.</span><br/><br/>
+                    구멍가게를 찾는 고객은 해마다 폭발적으로 증가하고 있습니다.<br/>
+                    우리는 지속적인 개선을 통해 더욱 편리한 사용자 경험을 제공할 것입니다.<br/>
+                    다양한 상품을 1+1으로 만나볼 수 있는 특별한 기회.<br/>
+                    우리는 당신을 기다리고 있습니다.</p>
+                </div>
+                <div class="chart">
+                    <div class="img-wrapper">
+                    <!-- <img src="image/chart.png" width="400px" height="320px"> -->
+                    <canvas id="myChart" width="400px" height="320px"></canvas>
+                    </div>
+                </div>
+            </section>
+            <!-- contact us 창-->
+            <section class="common contact-us">
+                <div class="contact-form">
+                    <h2>CONTACT US</h2>
+                    <p>서울특별시 강남구 한복판로 160</p>
+                    <p>Email. <span style="text-decoration: underline;">
+                        <a href="mailto:info@holemarket.com" style="margin:0">info@holemarket.com</a>
+                    </span></p>
+                    <br/>
+                    <p class="tel">TEL. 070-1234-1234</p>
+                    <br/><br/>
+                    <input placeholder="Name" class="contact name-input">
+                    <input placeholder="Mail" class="contact mail-input"><br>
+                    <input placeholder="Subject" class="contact subject-input"><br>
+                    <input placeholder="Phone" class="contact phone-input"><br>
+                    <textarea placeholder="Message" class="contact message-input"></textarea>
+                    <br/>
+                    <button class="send-message">SEND</button>
+                </div>
+            </section>
+            <!-- TOP -->
+            <section class="top">
+                <a href="#">TOP</a>
+                <script type="text/javascript">
+                    var sch = $(window).height();
+                    $('a').on('click',function(){
+                        $('html, body').animate({
+                            scrollTop:0
+                        },1000)
+                        return false;
+                    });
+                </script>
+            </section>
+            <!-- footer -->
+            <footer class="common copyright">
+                <p style="padding: 80px; margin: 0; font-size: 20px;">Copyright ⓒ holemarket lnc. All rights reserved.</p>
+            </footer>
+        </div>
+</body>
+</html>
