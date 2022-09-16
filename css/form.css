@@ -1,0 +1,20 @@
+.contact        { border: none; border-bottom: solid 1px #aeaeae; padding: 0; margin: 10px; font-size: 20px; background-color: rgba(255, 255, 255, 0);}
+
+.name-input     { margin-right: 10px; width: 230px;}
+
+.mail-input     { margin-left: 10px; width: 230px;}
+
+.subject-input  { width: 480px;}
+
+.phone-input    { width: 480px;}
+
+.message-input  { width: 480px; height: 120px;}
+
+.send-message   { width: 80px; height: 40px; font-size: 18px; border: none;  border-radius: 10px; color: white; background-color: #08C7BD;}
+
+/*미디어 쿼리*/
+@media screen and (max-width:500px){
+    .contact        { width:90%; border: none; border-bottom: solid 1px #aeaeae; padding: 0; font-size: 20px; background-color: rgba(255, 255, 255, 0); }
+    .message-input  { text-align:120px;  }
+    .sent-message   { width:80px; height:40px; font-size:18px; border:none; border-radius:10px; color:white; background-color:#08C7BD; }
+}
